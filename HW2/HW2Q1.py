@@ -1,8 +1,6 @@
-
+# This code is provided by Foroozan Karimzadeh- PhD student at Gatech
 # coding: utf-8
-
 # In[155]:
-
 
 import numpy as np
 import json
@@ -23,7 +21,7 @@ nH, nM, nD = len(papersH), len(papersM), len(papersD)
 # this list at a minimum, as their names appear in the text of the papers
 # and leaving them in could lead to unpredictable results
 # stop_words = text.ENGLISH_STOP_WORDS.union({'HAMILTON','MADISON'})
-stop_words = {'HAMILTON','MADISON'}
+stop_words = {'HAMILTON', 'MADISON'}
 
 ## Form bag of words model using words used at least 10 times
 vectorizer = text.CountVectorizer(stop_words=stop_words,min_df=10)
